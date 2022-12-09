@@ -79,6 +79,17 @@
         flex-shrink: 0;
         padding: 15px 15px;
         margin: 3px;
+
+        &--active::before {
+            content: "";
+            position: absolute;
+            top: -1px; // border: 2px + offset: 1px
+            right: -1px; // border: 2px + offset: 1px
+            bottom: -1px; // border: 2px + offset: 1px
+            left: -1px; // border: 2px + offset: 1px
+            border: 3px solid #B8FFEC;
+            border-radius: 8px; // border—radius: 6px + offset: 1px
+        }
     }
 
     &__link a {
@@ -181,6 +192,11 @@
             height: 11px;
             background: url(../icons/arrow-down.svg) center center no-repeat
         }
+
+        &--active {
+            height: 100% !important;
+            transition: 1.5s all;
+        }
         
     }
 
@@ -189,21 +205,9 @@
 }
 
 
-.active-forward {
-    height: 100% !important;
-    transition: 1.5s all;
-}
 
-.active-link::before {
-    content: "";
-    position: absolute;
-    top: -1px; // border: 2px + offset: 1px
-    right: -1px; // border: 2px + offset: 1px
-    bottom: -1px; // border: 2px + offset: 1px
-    left: -1px; // border: 2px + offset: 1px
-    border: 3px solid #B8FFEC;
-    border-radius: 8px; // border—radius: 6px + offset: 1px
-}
+
+
 
   
   

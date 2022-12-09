@@ -3,16 +3,16 @@ const text = document.querySelector('.services__text');
 const links = document.querySelectorAll('.services__link');
 
 readMore.addEventListener('click', () => {
-    text.classList.toggle('active-forward');
+    text.classList.toggle('services__forward--active');
 });
 
 links.forEach((link) => {
     link.addEventListener('click', () => {
         links.forEach((link) => {
-            if (link.classList.contains('active-link')) {
-                link.classList.remove('active-link');
+            if (link.classList.contains('services__link--active')) {
+                link.classList.remove('services__link--active');
             }
         });
-        link.classList.add('active-link');
+        link.classList.add('services__link--active');
     });
 });
