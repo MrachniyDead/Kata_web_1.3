@@ -1,0 +1,26 @@
+@import 'base/variables';
+
+@import 'libs/fonts';
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'TT Lakes';
+}
+
+.container {
+    max-width: 1120px;
+    margin: 0 auto;
+}
+
+
+
+@import 'blocks/btn';
+@import 'blocks/menu';
+@import 'blocks/services';
+@import 'blocks/media';
+

@@ -1,0 +1,57 @@
+@media (max-width: 880px) {
+    .menu {
+        display: flex;
+    }
+    .services {
+        padding: 24px;
+        &__btns {
+            display: none;
+        }
+        &__title{
+            &::before {
+                left: -24px;
+            }
+        }
+        &__link-reviews {
+            display: none;
+        }
+    }
+    
+}
+
+@media (max-width: 540px) {
+    .menu {
+        &__float-left &__divider {
+            display: none;
+        }
+        &__btns:nth-child(1) {
+            display: none;
+        }
+    }
+    .services{
+        padding: 25px 16px;
+        &__title::before {
+            left: -16px;
+        }
+        &__wrapper {
+            flex-wrap: wrap;
+        }
+        &__text-wrapper {
+            flex-shrink: 0;
+            width: 100%;
+        }
+        &__text {
+            height: 100px;
+        }
+
+        &__forward {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+    
+        &__main-img {
+            width: 100%;
+        }
+    }
+
+}
