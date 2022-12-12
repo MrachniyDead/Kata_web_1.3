@@ -1,4 +1,4 @@
-.services {
+.promo {
     background: #F8F8F8;
     padding: 42px 32px;
 
@@ -15,17 +15,6 @@
         line-height: 40px;
         letter-spacing: -0.6px;
         color: #1B1C21;
-
-        &::before {
-            content: '';
-            display: block;
-            position: absolute;
-            left: -32px;
-            width: 3px;
-            height: 40px;
-            background: $green;
-            border-radius: 2px;
-        }
     }
 
     &__btns {
@@ -53,6 +42,7 @@
     &__links {
         display: flex;
         align-items: baseline;
+        // padding: 15px 15px;
         overflow-x: auto;
         list-style-type: none;
         margin-bottom: 3px;
@@ -77,6 +67,7 @@
     &__link {
         position: relative;
         flex-shrink: 0;
+        flex-grow: 1;
         padding: 15px 15px;
         margin: 3px;
 
@@ -149,6 +140,10 @@
         &:nth-child(1) {
             margin-bottom: 20px;
         }
+
+        &::first-line {
+            font-style: italic;
+        }
         
     }
 
@@ -195,7 +190,6 @@
 
         &--active {
             height: 100% !important;
-            transition: 1.5s all;
         }
         
     }

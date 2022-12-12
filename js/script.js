@@ -1,18 +1,21 @@
-const readMore = document.querySelector('.services__forward');
-const text = document.querySelector('.services__text');
-const links = document.querySelectorAll('.services__link');
+const readMore = document.querySelector('.promo__forward');
+const text = document.querySelector('.promo__text');
+const linksServices = document.querySelectorAll('.promo__link');
+
+
 
 readMore.addEventListener('click', () => {
-    text.classList.toggle('services__forward--active');
+    text.classList.toggle('promo__forward--active');
 });
 
-links.forEach((link) => {
+linksServices.forEach((link) => {
     link.addEventListener('click', () => {
-        links.forEach((link) => {
-            if (link.classList.contains('services__link--active')) {
-                link.classList.remove('services__link--active');
+        linksServices.forEach((link) => {
+            if (link.classList.contains('promo__link--active')) {
+                link.classList.remove('promo__link--active');
             }
         });
-        link.classList.add('services__link--active');
+        link.classList.add('promo__link--active');
     });
 });
+

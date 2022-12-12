@@ -7,5 +7,9 @@
     border: none;
     border-radius: 100%;
     background-color: $pink;
+    transition: .5s all;
     cursor: pointer;
+    &:hover {
+        filter: drop-shadow(4px 4px 10px $pink);
+    }
 }

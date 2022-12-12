@@ -1,8 +1,8 @@
 @media (max-width: 880px) {
-    .menu {
+    .header {
         display: flex;
     }
-    .services {
+    .promo {
         padding: 24px;
         &__btns {
             display: none;
@@ -20,7 +20,7 @@
 }
 
 @media (max-width: 540px) {
-    .menu {
+    .header {
         &__float-left &__divider {
             display: none;
         }
@@ -28,7 +28,7 @@
             display: none;
         }
     }
-    .services{
+    .promo{
         padding: 25px 16px;
         &__title::before {
             left: -16px;
