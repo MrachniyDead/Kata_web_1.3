@@ -3,10 +3,20 @@
 // }
 
 .menu {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 320px;
     background: #FFFFFF;
-    box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2);
     padding: 23px 24px 32px;
+    transition: transform .5s;
+    z-index: 2;
+
+    &--active {
+        transform: translateX(320px);
+        // left: 0 !important;
+        box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2);
+    }
 
     &__header {
         display: flex;
@@ -15,18 +25,19 @@
         margin-bottom: 50px;
     }
 
+    &__burger {
+        display: none;
+    }
+
     &__logo {
         margin-right: auto;
-        margin-left: 16px;
+        // margin-left: 16px;
         a {
             display: block;
             height: 51px;
         }
     }
 
-    &__nav {
-        
-    }
 
     &__links {
         display: flex;

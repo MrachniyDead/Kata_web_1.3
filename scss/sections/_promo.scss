@@ -70,6 +70,7 @@
         flex-grow: 1;
         padding: 15px 15px;
         margin: 3px;
+        text-align: center;
 
         &--active::before {
             content: "";
@@ -99,6 +100,11 @@
         }
     }
 
+    &__forward {
+        margin-left: 30px;
+        margin-top: 13px;
+    }
+
 
     &__link-reviews {
         margin-bottom: 15px;
@@ -119,7 +125,7 @@
     }
 
     &__text-wrapper {
-        width: 490px;
+        width: 600px;
         align-self: flex-start;
     }
 
@@ -127,6 +133,10 @@
         position: relative;
         height: 160px;
         overflow: hidden;
+
+        &--active {
+            height: 100% !important;
+        }
         
     }
     &__descr {
@@ -141,15 +151,16 @@
             margin-bottom: 20px;
         }
 
-        &::first-line {
-            font-style: italic;
-        }
+        // &::first-line {
+        //     font-style: italic;
+        // }
         
     }
 
 
     &__main-img {
         width: 531px;
+        margin: 0 auto;
         & img {
             width: 100%;
             height: auto;
@@ -157,42 +168,7 @@
         }
     }
 
-    &__forward {
-        width: 110px;
-        align-self: flex-start;
-        position: relative;
-        margin-left: 30px;
-        margin-top: 13px;
-        cursor: pointer;
 
-        & button {
-            font-weight: 600;
-            font-size: 16px;
-            letter-spacing: -0.2px;
-            text-decoration: none;
-            color: #1B1C21;
-            background-color: inherit;
-            border: none;
-            cursor: pointer;
-        }
-
-        &::before {
-            content: '';
-            display: block;
-            position: absolute;
-            left: -24px;
-            top: 50%;
-            transform: translateY(-50%);
-            width: 8px;
-            height: 11px;
-            background: url(../icons/arrow-down.svg) center center no-repeat
-        }
-
-        &--active {
-            height: 100% !important;
-        }
-        
-    }
 
     
 

@@ -5,14 +5,61 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ремонт техники Dell</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-    
+    <aside class="menu">
+        <header class="menu__header">
+            <button class="btn burger menu__burger burger--active">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <div class="menu__logo">
+                <a href="#"><img src="icons/logo.svg" alt="logo"></a>
+            </div>
+
+            <button class="btn"><img src="icons/search-menu.svg" alt="search-menu"></button>
+        </header>
+
+        <nav class="menu__nav">
+            <ul class="menu__links">
+                <li><a href="#" class="menu__link menu__link--active">Ремонт техники</a></li>
+                <li><a href="#" class="menu__link">Услуги и сервисы</a></li>
+                <li><a href="#" class="menu__link">Корпоративным клиентам</a></li>
+                <li><a href="#" class="menu__link">Продавцам техники</a></li>
+                <li><a href="#" class="menu__link">Партнерам</a></li>
+                <li><a href="#" class="menu__link">Производителям</a></li>
+                <li><a href="#" class="menu__link">Наши сервисные центры</a></li>
+                <li><a href="#" class="menu__link">Контакты</a></li>
+            </ul>
+        </nav>
+
+        <footer class="menu__footer">
+            <div class="menu__btns">
+                <button class="btn"><img src="icons/phone.svg" alt="phone"></button>
+                <button class="btn"><img src="icons/message.svg" alt="message"></button>
+                <button class="btn"><img src="icons/person.svg" alt="person"></button>
+            </div>
+
+            <div class="menu__mail"><a href="mailto:mail@cps.com">mail@cps.com</a></div>
+            <div class="menu__phone"><a href="tel:+88008908900">8 800 890 8900</a></div>
+
+            <div class="menu__lang-btns">
+                <button class="menu__lang-btn">RU</button>
+                <button class="menu__lang-btn">EN</button>
+                <button class="menu__lang-btn">CH</button>
+            </div>
+        </footer>
+    </aside>
+
     <div class="container">
+        <div class="underlay"></div>
         <header class="header">
             <div class="header__float-left">
-                <button class="btn burger">
+                <button class="btn burger ">
                     <span></span>
                     <span></span>
                     <span></span>
@@ -45,7 +92,7 @@
             <section class="promo">
                 
                 <header class="promo__header">
-                    <h1 class="promo__title title--active">Услуги и сервисы</h1>
+                    <h1 class="promo__title">Услуги и сервисы</h1>
 
                     <div class="promo__btns">
                         <div class="promo__btns-item">
@@ -83,7 +130,7 @@
                                 Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.
                             </p>
                         </div>
-                        <div class="promo__forward">
+                        <div class="link__forward promo__forward" data-forward="promo">
                             <button>Читать далее</button>
                         </div>
                     </div>
@@ -94,10 +141,118 @@
                 </div>
 
             </section>
+
+            <section class="brands">
+                <div class="subtitle"> 
+                    Ремонт техники различных брендов
+                </div>
+
+                <div class="swiper" data-mobile="false">
+                    <div class="brands__cards">
+                        <div class="brands__card">
+                            <div class="brands--logo">
+                                <img src="icons/brand1.svg" alt="lenovo">
+                            </div>
+                            <div class="brands__arrow">
+                                <a href="#"><img src="icons/go.svg" alt="go"></a>
+                            </div>
+                        </div>
+                        <div class="brands__card">
+                            <div class="brands--logo">
+                                <img src="icons/brand2.svg" alt="sumsung">
+                            </div>
+                            <div class="brands__arrow">
+                                <a href="#"><img src="icons/go.svg" alt="go"></a>
+                            </div>
+                        </div>
+                        <div class="brands__card">
+                            <div class="brands--logo">
+                                <img src="icons/brand3.svg" alt="apple">
+                            </div>
+                            <div class="brands__arrow">
+                                <a href="#"><img src="icons/go.svg" alt="go"></a>
+                            </div>
+                        </div>
+                        <div class="brands__card">
+                            <div class="brands--logo">
+                                <img src="icons/brand4.svg" alt="viewSonic">
+                            </div>
+                            <div class="brands__arrow">
+                                <a href="#"><img src="icons/go.svg" alt="go"></a>
+                            </div>
+                        </div>
+                        <div class="brands__card">
+                            <div class="brands--logo">
+                                <img src="icons/brand5.svg" alt="bosch">
+                            </div>
+                            <div class="brands__arrow">
+                                <a href="#"><img src="icons/go.svg" alt="go"></a>
+                            </div>
+                        </div>
+                        <div class="brands__card">
+                            <div class="brands--logo">
+                                <img src="icons/brand6.svg" alt="hp">
+                            </div>
+                            <div class="brands__arrow">
+                                <a href="#"><img src="icons/go.svg" alt="go"></a>
+                            </div>
+                        </div>
+                        <div class="brands__card">
+                            <div class="brands--logo">
+                                <img src="icons/brand7.svg" alt="acer">
+                            </div>
+                            <div class="brands__arrow">
+                                <a href="#"><img src="icons/go.svg" alt="go"></a>
+                            </div>
+                        </div>
+                        <div class="brands__card">
+                            <div class="brands--logo">
+                                <img src="icons/brand8.svg" alt="sony">
+                            </div>
+                            <div class="brands__arrow">
+                                <a href="#"><img src="icons/go.svg" alt="go"></a>
+                            </div>
+                        </div>
+                        <div class="brands__card">
+                            <div class="brands--logo">
+                                <img src="icons/brand1.svg" alt="lenovo">
+                            </div>
+                            <div class="brands__arrow">
+                                <a href="#"><img src="icons/go.svg" alt="go"></a>
+                            </div>
+                        </div>
+                        <div class="brands__card">
+                            <div class="brands--logo">
+                                <img src="icons/brand2.svg" alt="sumsung">
+                            </div>
+                            <div class="brands__arrow">
+                                <a href="#"><img src="icons/go.svg" alt="go"></a>
+                            </div>
+                        </div>
+                        <div class="brands__card">
+                            <div class="brands--logo">
+                                <img src="icons/brand3.svg" alt="apple">
+                            </div>
+                            <div class="brands__arrow">
+                                <a href="#"><img src="icons/go.svg" alt="go"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+
+                <div class="link__forward brands__forward" data-forward="brands">
+                    <button>Показать все</button>
+                </div>
+            </section>
+
+
         </main>
 
     </div>
 
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

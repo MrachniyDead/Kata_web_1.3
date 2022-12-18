@@ -13,17 +13,49 @@ body {
 }
 
 .container {
-    max-width: 1120px;
-    margin: 0 auto;
+    // max-width: 1120px;
+    margin-left: 320px;
+    transition: all .5s;
+    &--active {
+        opacity: 0.07;
+    }
 }
 
+.underlay {
+    display: none;
+    &--active {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+    }
+}
+
+@media(max-width: 1440px) {
+    .container {
+        // max-width: 1120px;
+        margin: 0 auto;
+    }
+}
 
 
 @import 'blocks/btn';
 @import 'blocks/burger';
 @import 'blocks/title';
-@import 'blocks/header';
-@import 'blocks/promo';
-@import 'blocks/media';
-@import 'blocks/menu';
+@import 'blocks/subtitle';
+@import 'blocks/link-forward';
+
+
+@import 'sections/header';
+@import 'sections/promo';
+@import 'sections/menu';
+@import 'sections/brands';
+
+
+@import 'media/promo&header-media';
+@import 'media/menu-media';
+@import 'media/brands-media';
 

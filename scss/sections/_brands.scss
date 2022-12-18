@@ -1,0 +1,39 @@
+.brands {
+    background: #F8F8F8;
+    padding: 15px 32px;
+
+    &__cards {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px 32px;
+
+        height: 160px;
+        margin-top: 40px;
+        overflow: hidden;
+
+        transition: height .3s;
+
+        &--active {
+            height: 248px;
+        }
+    }
+
+    &__card {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        width: 240px;
+        height: 72px;
+        padding: 16px;
+        
+        background: #FFFFFF;
+        border: 1px solid #EAEAEA;
+        border-radius: 6px;
+    }
+
+    &__forward {
+        margin-left: 30px;
+        margin-top: 24px;
+    }
+}
