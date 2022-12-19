@@ -57,7 +57,6 @@ forwardPromo.addEventListener('click', () => {
     if (window.innerWidth < 1000) {
         text.classList.toggle('promo__text--active');
         forwardPromo.classList.toggle('link__forward--active');
-        forwardPromo.textContent = "Cкрыть";
     }
 });
 
@@ -79,7 +78,6 @@ const forwardBrands = document.querySelector('[data-forward="brands"]');
 const brandCards = document.querySelector('.brands__cards');
 
 forwardBrands.addEventListener('click', () => {
-    console.log('done');
     forwardBrands.classList.toggle('link__forward--active');
     brandCards.classList.toggle('brands__cards--active');
 
