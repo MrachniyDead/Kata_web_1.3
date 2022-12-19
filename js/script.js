@@ -57,6 +57,12 @@ forwardPromo.addEventListener('click', () => {
     if (window.innerWidth < 1000) {
         text.classList.toggle('promo__text--active');
         forwardPromo.classList.toggle('link__forward--active');
+
+        if (forwardPromo.classList.contains(('link__forward--active'))) {
+            forwardPromo.querySelector('button').textContent = "Cкрыть";
+        } else {
+            forwardPromo.querySelector('button').textContent = "Читать далее"; 
+        }
     }
 });
 
@@ -82,9 +88,9 @@ forwardBrands.addEventListener('click', () => {
     brandCards.classList.toggle('brands__cards--active');
 
     if (forwardBrands.classList.contains(('link__forward--active'))) {
-        forwardBrands.querySelector('button').innerHTML = "Cкрыть";
+        forwardBrands.querySelector('button').textContent = "Cкрыть";
     } else {
-        forwardBrands.querySelector('button').innerHTML = "Показать все"; 
+        forwardBrands.querySelector('button').textContent = "Показать все"; 
     }
     
 });
