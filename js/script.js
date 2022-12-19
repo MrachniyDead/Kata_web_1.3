@@ -57,6 +57,7 @@ forwardPromo.addEventListener('click', () => {
     if (window.innerWidth < 1000) {
         text.classList.toggle('promo__text--active');
         forwardPromo.classList.toggle('link__forward--active');
+        forwardPromo.textContent = "Cкрыть";
     }
 });
 
@@ -81,6 +82,13 @@ forwardBrands.addEventListener('click', () => {
     console.log('done');
     forwardBrands.classList.toggle('link__forward--active');
     brandCards.classList.toggle('brands__cards--active');
+
+    if (forwardBrands.classList.contains(('link__forward--active'))) {
+        forwardBrands.querySelector('button').innerHTML = "Cкрыть";
+    } else {
+        forwardBrands.querySelector('button').innerHTML = "Показать все"; 
+    }
+    
 });
 
 // slider
