@@ -21,6 +21,10 @@ body {
     }
 }
 
+.main {
+    background: #F8F8F8;
+}
+
 .underlay {
     display: none;
     &--active {
@@ -49,13 +53,13 @@ body {
 @import 'blocks/link-forward';
 
 
-@import 'sections/header';
-@import 'sections/promo';
-@import 'sections/menu';
-@import 'sections/brands';
+@import 'blocks/sections/header';
+@import 'blocks/sections/promo';
+@import 'blocks/sections/menu';
+@import 'blocks/sections/brands';
 
 
-@import 'media/promo&header-media';
-@import 'media/menu-media';
-@import 'media/brands-media';
+@import 'blocks/media/promo&header-media';
+@import 'blocks/media/menu-media';
+@import 'blocks/media/brands-media';
 
