@@ -17,6 +17,9 @@
     }
 
     @media(max-width: 540px) {
+
+        width: auto;
+        
         .link__forward {
             display: none;
         }
@@ -57,6 +60,14 @@
         overflow: hidden;
 
         transition: height .3s;
+
+        @media(max-width: 1020px) {
+            width: 720px;
+        }
+    
+        @media(max-width: 770px) {
+            width: 472px;
+        }
 
         &--active {
             height: 248px;
